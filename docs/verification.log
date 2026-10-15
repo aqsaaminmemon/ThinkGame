@@ -1,0 +1,83 @@
+Start testing: Oct 14 20:24 PKT
+----------------------------------------------------------
+1/2 Testing: rules_progress_saves
+1/2 Test: rules_progress_saves
+Command: "/home/afa/Aqsa/Projects/ThinkGame/build/thinkgame_tests"
+Directory: /home/afa/Aqsa/Projects/ThinkGame/build
+"rules_progress_saves" start time: Oct 14 20:24 PKT
+Output:
+----------------------------------------------------------
+PASS: 90 examples, 30 independent answers, rule equivalence screening, all progression, input, timed hints, quotas, reload, backups, corruption, save failure, and installed asset discovery.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"rules_progress_saves" end time: Oct 14 20:24 PKT
+"rules_progress_saves" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: actual_graphics_and_events
+2/2 Test: actual_graphics_and_events
+Command: "/home/afa/Aqsa/Projects/ThinkGame/build/thinkgame_ui_tests"
+Directory: /home/afa/Aqsa/Projects/ThinkGame/build
+"actual_graphics_and_events" start time: Oct 14 20:24 PKT
+Output:
+----------------------------------------------------------
+PASS: actual SFML mouse/keyboard events, locked popups, hint display, both submit methods, all 30 screens, five shapes, small-window renders, solutions and final completion.
+Screenshots: "/tmp/thinkgame-ui-tests/screens"
+<end of output>
+Test time =  18.11 sec
+----------------------------------------------------------
+Test Passed.
+"actual_graphics_and_events" end time: Oct 14 20:25 PKT
+"actual_graphics_and_events" time elapsed: 00:00:18
+----------------------------------------------------------
+
+End testing: Oct 14 20:25 PKT
+
+2026-10-14: Home screen, score, and responsive game update
+cmake --build build -j 4: passed
+ctest --test-dir build --output-on-failure:
+rules_progress_saves: Passed (0.04 sec)
+actual_graphics_and_events: Passed (12.26 sec)
+100% tests passed, 0 tests failed out of 2; total 12.31 sec.
+Visually reviewed home at 1120x800 and 720x600, puzzle at 1200x960 and 1920x1080, score, small solution, and long-formula hint.
+
+2026-10-14: Replaced the actual home puzzle preview with a connected level journey. Build passed; home renders visually checked at 1120x800 and 720x600. Packaged executable refreshed.
+
+2026-10-14: Exhausted saved hints can be reviewed; added click/hint/correct/wrong sounds and immediate mute.
+Test project /home/afa/Aqsa/Projects/ThinkGame/build
+    Start 1: rules_progress_saves
+1/2 Test #1: rules_progress_saves .............   Passed    0.02 sec
+    Start 2: actual_graphics_and_events
+2/2 Test #2: actual_graphics_and_events .......   Passed   20.87 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  20.89 sec
+Visual review: hint review, Hide hint, sound controls at default, 720x600 and large sizes. Original player save was not modified. Packaged executable, sounds and dependency notices refreshed.
+
+2026-10-14: Authored plain-word clues for all 30 levels; hint cards no longer render formulas or variables.
+Test project /home/afa/Aqsa/Projects/ThinkGame/build
+    Start 1: rules_progress_saves
+1/2 Test #1: rules_progress_saves .............   Passed    0.03 sec
+    Start 2: actual_graphics_and_events
+2/2 Test #2: actual_graphics_and_events .......   Passed   46.26 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  46.30 sec
+Word-only clue checks passed. All 30 clues rendered at both sizes; longest clue visually reviewed in a small window. Packaged game and catalogue updated.
+
+2026-10-15: Persistent word-based pattern help; one/two/three unique clues for levels 1-10/11-20/21-30.
+Added illustrated home, simpler home wording, larger central puzzle and numbers, and six soft sound cues.
+Test project /home/afa/Aqsa/Projects/ThinkGame/build
+    Start 1: rules_progress_saves
+1/2 Test #1: rules_progress_saves .............   Passed    0.01 sec
+    Start 2: actual_graphics_and_events
+2/2 Test #2: actual_graphics_and_events .......   Passed   40.24 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  40.26 sec
+Verified all tier boundaries, 60 authored clues, legacy saves, persistence beyond the old timer, scaled close controls, all 30 puzzle layouts, six sound cues and mute. Visually reviewed illustrated home, enlarged puzzle, two-clue help, and all three clues at 720x600. Packaged executable and assets updated.

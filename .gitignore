@@ -1,0 +1,5 @@
+/build*/
+/bin/
+*.save
+*.save.bak
+*.save.tmp

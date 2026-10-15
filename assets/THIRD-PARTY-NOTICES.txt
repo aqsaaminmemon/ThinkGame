@@ -1,0 +1,5 @@
+ThinkGame bundles SFML (see SFML-LICENSE.md), DejaVu fonts (see FONT-LICENSE.txt), and the Ogg, Vorbis, FLAC, miniaudio, minimp3 and FreeType libraries. Their notices are in licenses/.
+
+Portions of this software are copyright 2023 The FreeType Project (www.freetype.org). All rights reserved. FreeType is distributed under the FreeType License.
+
+The game sound effects are original synthesized tones; see sounds/README.md.
